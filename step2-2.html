@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar start -->
+
+  <div class="sidebar">
+    
+    <ul>
+      <li><span class="step">Step 1</span> YOUR INFO</li>
+      <li><span class="step">Step 2</span> SELECT PLAN</li>
+      <li><span class="step">Step 3</span> ADD-ONS</li>
+      <li><span class="step">Step 4</span> SUMMARY</li>
+    </ul>
+  </div>
+  
+<div class="heading-content">
+   <h1>Select your plan</h1> 
+   <p>You have the option of monthly or yearly billing.</p> 
+</div>
+
+<!-- card -->
+
+  <div class="card-container">
+    <div class="card">
+     
+      <div class="card-content">
+        <h3>Arcade</h3>
+        <p>$90/yr</p>
+      </div>
+    </div>
+    <div class="card">
+      
+      <div class="card-content">
+        <h3>Advanced</h3>
+        <p>$120/yr</p>
+      </div>
+    </div>
+    <div class="card">
+      
+      <div class="card-content">
+        <h3>Pro</h3>
+        <p>$150/yr</p>
+      </div>
+    </div>
+  </div>
+
+
+<!-- toggle btn -->
+<div class="flex-container">
+    <div class="item">
+        <span>Monthly</span>
+    </div>
+    <div class="item-toggle">
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+
+    </div>
+    <div class="item">
+        <span>Yearly</span>
+    </div>
+</div>
+
+<!-- down button -->
+<div class="button-grid">
+    <button onclick="goBackAndRedirect()" class="text-button">Go back</button>
+    <button class="grid-button">Next step</button>
+  </div>
+      </body>
+</html> 
