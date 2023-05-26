@@ -32,9 +32,9 @@ let toggleButton = document.getElementById('toggleButton');
 toggleButton.addEventListener('click', function() {
   toggleButton.classList.toggle('active');
   if (toggleButton.classList.contains('active')) {
-    window.location.href = 'page2.html'; // URL for the second page
+    window.location.href = "step2-2.html"; // URL for the second page
   } else {
-    window.location.href = 'page2-2.html'; // URL for the first page
+    window.location.href = "step2.html"; // URL for the first page
   }
 });
 
