@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+    
+        <ul>
+          <li> <a href="index.html"><span class="step">Step 1</span> YOUR INFO</a></li>
+          <li><a href="step2.html"><span class="step">Step 2</span> SELECT PLAN</a></li>
+          <li><a href="step3.html"><span class="step">Step 3</span> ADD-ONS</a></li>
+          <li><a href="step4.html"><span class="step">Step 4</span> SUMMARY</a></li>
+        </ul>
+      </div>
+      
+    <div class="heading-content">
+       <h1>Pick add-ons</h1> 
+       <p>Add-ons enhance your gaming experience.</p> 
+    </div>
+
+    <!-- cards -->
+<div class="card-container">
+    <div class="card">
+        <input  type="checkbox" name="checkbox" id="check">
+     
+      <div class="card-content">
+        <h3>Online service</h3>
+        <p>Access to multiplayer games.</p>
+        <p>$1/mo</p>
+      </div>
+    </div>
+    <div class="card">
+        <input  type="checkbox" name="checkbox" id="check">
+     
+      <div class="card-content">
+        <h3>Larger storage</h3>
+        <p>Extra 1TB of cloudsave.</p>
+        <p>$2/mo</p>
+      </div>
+    </div>
+    <div class="card">
+        <input  type="checkbox" name="checkbox" id="check">
+     
+      <div class="card-content">
+        <h3>Customizable profile</h3>
+        <p>Custom theme on your profile.</p>
+        <p>$2/mo</p>
+      </div>
+    </div>
+  </div>
+  <!-- dutton -->
+  <div class="button-grid">
+    <button onclick="goToPreviousPage()" class="text-button"><a href="step2.html ">Go back</a></button>
+    <button onclick="goToNextPage()" class="grid-button"><a href="step4.html">Next step</a></button>
+  </div>
+  
+   </body>
+  </html>
