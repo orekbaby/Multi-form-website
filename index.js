@@ -25,6 +25,7 @@ let cards = document.querySelectorAll(".card");
      card.classList.add("active");
    });
   });
+  
 // toggle-button
 let toggleButton = document.getElementById('toggleButton');
 
