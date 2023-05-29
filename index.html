@@ -19,14 +19,32 @@
   <!-- Sidebar start -->
 
   <div class="sidebar">
-    
     <ul>
-      <li> <a href="index.html"><span class="step">Step 1</span> YOUR INFO</a></li>
-      <li><a href="step2.html"><span class="step">Step 2</span> SELECT PLAN</a></li>
-      <li><a href="step3.html"><span class="step">Step 3</span> ADD-ONS</a></li>
-      <li><a href="step4.html"><span class="step">Step 4</span> SUMMARY</a></li>
+      <li><a href="index.html" onclick="return validateStep(1)"><span class="step">Step 1</span> YOUR INFO</a></li>
+      <li><a href="step2.html" onclick="return validateStep(2)"><span class="step">Step 2</span> SELECT PLAN</a></li>
+      <li><a href="step3.html" onclick="return validateStep(3)"><span class="step">Step 3</span> ADD-ONS</a></li>
+      <li><a href="step4.html" onclick="return validateStep(4)"><span class="step">Step 4</span> SUMMARY</a></li>
     </ul>
   </div>
+  
+  <script>
+    // Store the completed steps
+    var completedSteps = [];
+  
+    // Validate step before allowing navigation
+    function validateStep(step) {
+      // Check if the current step has been completed
+      if (completedSteps.includes(step - 1)) {
+        // Mark the current step as completed
+        completedSteps.push(step);
+        return true; // Allow navigation to the next page
+      } else {
+        alert("Please complete the previous step first.");
+        return false; // Prevent navigation to the next page
+      }
+    }
+  </script>
+  
   
   
 
