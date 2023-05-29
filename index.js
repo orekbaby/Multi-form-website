@@ -10,8 +10,12 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
       event.preventDefault(); // Prevent form submission
       alert("Please fill in all required fields and enter a valid email address.");
     }
+
+});
+
   });
   
+
 
 
 
