@@ -37,7 +37,7 @@
 <!-- card -->
 
   <div class="card-container">
-    <div class="card active" id="arcade">
+    <div class="card-active" id="arcade">
 
       <img class="img-resize" src="assets/images/icon-arcade.svg" alt="Card Image">
 
@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <div class="card active" id="Advanced">
+    <div class="card-active" id="Advanced">
       <img class="img-resize" src="assets/images/icon-advanced.svg" alt="Card Image">
 
       <div class="card-content">
@@ -58,7 +58,7 @@
       </div>
     </div>
 
-    <div class="card active" id="pro">
+    <div class="card-active" id="pro">
       <img class="img-resize" src="assets/images/icon-Pro.svg" alt="Card Image">
 
       <div class="card-content">
@@ -89,8 +89,8 @@
 
 <!-- down button -->
 <div class="button-grid">
-    <button onclick="goToPreviousPage()"  class="text-button"><a href="index.html">Go back</a></button>
-    <button onclick="goToNextPage()" class="grid-button"><a href="step3.html"> Next step</a></button>
+    <button id="backButton" class="text-button">Go back</button>
+    <button id="nextButton" class="grid-button">Next step</button>
   </div>
   <script src="./step2.js"></script>
       </body>

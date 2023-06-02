@@ -27,29 +27,9 @@
     </ul>
   </div>
   
-  <script>
-    // Store the completed steps
-    var completedSteps = [];
-  
-    // Validate step before allowing navigation
-    function validateStep(step) {
-      // Check if the current step has been completed
-      if (completedSteps.includes(step - 1)) {
-        // Mark the current step as completed
-        completedSteps.push(step);
-        return true; // Allow navigation to the next page
-      } else {
-        alert("Please complete the previous step first.");
-        return false; // Prevent navigation to the next page
-      }
-    }
-  </script>
   
   
-  
-
- 
-  <!-- Step 1 start -->
+   <!-- Step 1 start -->
   <div class="heading-content">
 <h1 class="heading-style">Personal info</h1> 
 <p class="heading-style"> Please provide your name, email address, and phone number.</p>
@@ -68,16 +48,12 @@
     
   </div>
   <div class="form-group">
-    <button type="submit">Next step</button>
+    <button id="nextButton" class="text-button"> Next step</button> 
   </div>
 </form>
+
 </div>
- 
-
-
-  
-  
-  <div class="attribution"> <br> <br>
+ <div class="attribution"> <br> <br>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Folakemi Orekoya</a>.
   </div>

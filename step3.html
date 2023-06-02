@@ -34,40 +34,38 @@
     </div>
 
     <!-- cards -->
-<div class="card-container">
-    <div class="card">
-        <input  type="checkbox" name="checkbox" id="check">
-     
-      <div class="card-content">
-        <h3>Online service</h3>
-        <p>Access to multiplayer games.</p>
-        <p>$1/mo</p>
+    <div class="card-container">
+      <div class="card-active">
+        <input type="checkbox" name="checkbox" id="checkbox1">
+        <div class="card-content">
+          <h3>Online service</h3>
+          <p>Access to multiplayer games.</p>
+          <p>$1/mo</p>
+        </div>
+      </div>
+      <div class="card-active">
+        <input type="checkbox" name="checkbox" id="checkbox2">
+        <div class="card-content">
+          <h3>Larger storage</h3>
+          <p>Extra 1TB of cloudsave.</p>
+          <p>$2/mo</p>
+        </div>
+      </div>
+      <div class="card-active">
+        <input type="checkbox" name="checkbox" id="checkbox3">
+        <div class="card-content">
+          <h3>Customizable profile</h3>
+          <p>Custom theme on your profile.</p>
+          <p>$2/mo</p>
+        </div>
       </div>
     </div>
-    <div class="card">
-        <input  type="checkbox" name="checkbox" id="check">
-     
-      <div class="card-content">
-        <h3>Larger storage</h3>
-        <p>Extra 1TB of cloudsave.</p>
-        <p>$2/mo</p>
-      </div>
-    </div>
-    <div class="card">
-        <input  type="checkbox" name="checkbox" id="check">
-     
-      <div class="card-content">
-        <h3>Customizable profile</h3>
-        <p>Custom theme on your profile.</p>
-        <p>$2/mo</p>
-      </div>
-    </div>
-  </div>
+    
   <!-- dutton -->
   <div class="button-grid">
-    <button onclick="goToPreviousPage()" class="text-button"><a href="step2.html ">Go back</a></button>
-    <button onclick="goToNextPage()" class="grid-button"><a href="step4.html">Next step</a></button>
+    <button id="backButton" class="text-button">Go back</button>
+    <button id="nextButton" class="grid-button">Next step</button>
   </div>
-  
+  <script src="./step3.js"></script>
    </body>
   </html>
